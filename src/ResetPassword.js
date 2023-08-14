@@ -15,7 +15,7 @@ const ResetPassword = () => {
     function handleSubmit(e){
             e.preventDefault();
             console.log(token)
-            axios.post(`https://authentication-97er.onrender.com//reset-password/${id}/${token}`,{password})
+            axios.post(`https://authentication-97er.onrender.com/reset-password/${id}/${token}`,{password})
             .then(result=>{console.log(result,id,token)
                 if(result.data.Status == 'Success'){
                    alert('Passwor changed successfully')

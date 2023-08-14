@@ -14,7 +14,7 @@ const SignUp = () => {
             e.preventDefault();
             console.log(name,email,password)
 
-            axios.post('https://authentication-97er.onrender.com//register',{name,email,password})
+            axios.post('https://authentication-97er.onrender.com/register',{name,email,password})
             .then(result => console.log(result))
             .catch(err => console.log(err))
 

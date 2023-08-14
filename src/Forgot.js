@@ -12,7 +12,7 @@ const Forgot = () => {
     function handleSubmit(e){
             e.preventDefault();
             console.log(email)
-            axios.post('https://authentication-97er.onrender.com//forgot-password',{email})
+            axios.post('https://authentication-97er.onrender.com/forgot-password',{email})
             .then(result=>{console.log(result)
                 if(result.data == 'Success'){
                    alert('check your mail for password reset')

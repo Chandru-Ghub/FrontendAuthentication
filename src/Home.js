@@ -7,7 +7,7 @@ const Home = () => {
   const navigate = useNavigate() 
   axios.defaults.withCredentials = true
   useEffect(()=>{
-      axios.get('https://authentication-97er.onrender.com//home')
+      axios.get('https://authentication-97er.onrender.com/home')
       .then(result => {console.log(result)
             if(result.data !== 'Success'){
               navigate('/login')

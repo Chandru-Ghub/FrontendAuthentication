@@ -13,7 +13,7 @@ const Login = () => {
     function handleSubmit(e){
             e.preventDefault();
             console.log(email,password)
-            axios.post('https://authentication-97er.onrender.com//verify',{email,password})
+            axios.post('https://authentication-97er.onrender.com/verify',{email,password})
             .then(result=>{console.log(result)
 
                 setmail('')
