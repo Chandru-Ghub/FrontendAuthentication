@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
 
+import { useState } from 'react'
+import  'bootstrap/dist/css/bootstrap.min.css'
+import './App.css'
+import { BrowserRouter, Route, Routes} from 'react-router-dom'
+import SignUp from './SignUp'
+import Login from './Login'
+import Home from './Home'
+import view from './View'
+import Forgot from './Forgot'
+import ResetPassword from './ResetPassword'
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div>
+              <BrowserRouter>
+              <Routes>
+                <Route path='/signup' Component={SignUp} />
+                <Route path='/login' Component={Login} />
+                <Route path='/home' Component={Home} />
+                <Route path='/' Component={view} />
+                <Route path='/forgot' Component={Forgot} />
+                <Route path='/reset_password/:id/:token' Component={ResetPassword} />
+              </Routes>
+            </BrowserRouter>
+        
+   </div>
+  )
 }
 
-export default App;
+export default App
