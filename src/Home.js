@@ -10,7 +10,7 @@ const Home = () => {
       axios.get('https://authentication-97er.onrender.com/home')
       .then(result => {console.log(result)
             if(result.data !== 'Success'){
-              navigate('/login')
+            //   navigate('/login')
             }
       }).catch(err=>console.log(err))
   },[])
