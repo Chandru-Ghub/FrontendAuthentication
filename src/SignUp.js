@@ -29,9 +29,9 @@ const SignUp = () => {
         <h3>Register</h3>
         </div>
             <form onSubmit={handleSubmit} className='mb-3 '>
-                <input value={name} onChange={(e)=> setname(e.target.value)} className='mb-4' type="text" placeholder='Enter Your Name'/><br></br>
-                <input value={email} onChange={(e)=> setemail(e.target.value)} className='mb-4' type="text" placeholder='Enter Your email ID'/><br></br>
-                <input value={password} onChange={(e)=>setpassword(e.target.value)} className='mb-4' type="text" placeholder='Enter Your Password' />
+                <input value={name} onChange={(e)=> setname(e.target.value)} className='mb-4' type="text" required placeholder='Enter Your Name'/><br></br>
+                <input value={email} onChange={(e)=> setemail(e.target.value)} className='mb-4' type="email" required placeholder='Enter Your email ID'/><br></br>
+                <input value={password} onChange={(e)=>setpassword(e.target.value)} className='mb-4' type="password" required placeholder='Enter Your Password' />
                 <br></br>
                 <button type='submit' className=' mb-3 btn btn-primary'>Register </button>
                 <br />

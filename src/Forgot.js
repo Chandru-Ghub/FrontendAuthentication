@@ -33,7 +33,7 @@ const Forgot = () => {
         <div className='card d-flex  bg-white p-4 rounded w-20'>
         <h5 style={{color:'green'}}>Forgot Password !</h5>
             <form onSubmit={handleSubmit} className='mb-3 '>
-                <input value={email} onChange={(e)=> setemail(e.target.value)} className='mb-1' type="text" placeholder='Enter Your email ID'/>
+                <input  value={email} onChange={(e)=> setemail(e.target.value)} className='mb-1' type="email" required placeholder='Enter Your email ID'/>
                 <p style={{color:'red',fontSize:'14px'}}>{mail}</p>
                 <button type='submit' className='btn btn-primary'>Send mail</button>
                

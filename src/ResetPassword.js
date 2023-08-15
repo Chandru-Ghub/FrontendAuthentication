@@ -32,7 +32,7 @@ const ResetPassword = () => {
         <div className='card d-flex  bg-white p-4 rounded w-20'>
         <h5 style={{color:'green'}}>Reset Password !</h5>
             <form onSubmit={handleSubmit} className='mb-3 '>
-                <input value={password} onChange={(e)=> setpassword(e.target.value)} className='mb-1' type="text" placeholder='Enter new password'/>
+                <input  value={password} onChange={(e)=> setpassword(e.target.value)} className='mb-1' type="text" placeholder='Enter new password'/>
                 <p style={{color:'red',fontSize:'14px'}}>{mail}</p>
             
                 <button type='submit' className='btn btn-primary'>update</button>
