@@ -33,13 +33,16 @@ const SignUp = () => {
                 <input value={email} onChange={(e)=> setemail(e.target.value)} className='mb-4' type="email" required placeholder='Enter Your email ID'/><br></br>
                 <input value={password} onChange={(e)=>setpassword(e.target.value)} className='mb-4' type="password" required placeholder='Enter Your Password' />
                 <br></br>
-                <button type='submit' className=' mb-3 btn btn-primary'>Register </button>
-                <br />
+                <div className='snp'>
+                    <button type='submit' className=' btns'>Register </button>
+                    <br />
+                    <Link to='/login'>
+                    <button type='submit' className='btns '>Login</button>
+                    </Link>
+                </div>
                 
             </form>
-            <Link to='/login'>
-                <button type='submit' className='btn btn-success'>Login</button>
-            </Link>
+           
         </div>
     </div>
   )

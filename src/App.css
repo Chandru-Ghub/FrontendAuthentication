@@ -88,9 +88,9 @@ a:hover{
 }
 span{
 
-  color: rgb(219, 158, 168);
+  color: rgb(98, 93, 94);
   text-decoration: underline;
- 
+  margin-left: 5px;
 }
 .btn{
   margin-top: 10px;

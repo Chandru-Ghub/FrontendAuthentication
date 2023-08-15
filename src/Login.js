@@ -55,8 +55,9 @@ const Login = () => {
                 <input value={password} onChange={(e)=>setpassword(e.target.value)} className='mb-4' type="password" required placeholder='Enter Your Password' />
                 
                 <p style={{color:'red',fontSize:'14px'}}>{pass}</p>
-                <Link to = '/forgot'  ><span >Forgot Password?</span></Link><br></br>
-                <button type='submit' className='btn btn-primary'>Login</button>
+                
+                <button type='submit' className='btns'> <h5>Login </h5></button><br></br>
+                <Link to = '/forgot'  ><span >Forgot Password?</span></Link>
                
             </form>
         </div>
