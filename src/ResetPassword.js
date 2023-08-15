@@ -18,7 +18,7 @@ const ResetPassword = () => {
             axios.post(`https://authentication-97er.onrender.com/reset-password/${id}/${token}`,{password})
             .then(result=>{console.log(result,id,token)
                 if(result.data.Status == 'Success'){
-                   alert('Passwor changed successfully')
+                   alert('Password changed successfully')
                     navigate('/login')
                     }
 

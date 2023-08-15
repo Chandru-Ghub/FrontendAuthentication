@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import logo from './pngwing.com (1).png'
 const Login = () => {
 
     const[email,setemail] = useState();
@@ -44,14 +45,17 @@ const Login = () => {
     <div className='d-flex bg-secondary justify-content-center align-items-center  vh-100'>
     
         <div className='card d-flex  bg-white p-5 rounded w-20'>
+            <div className='icon'>
+            <img className='cam' src={logo} alt="" />
         <h3>LOGIN</h3>
+        </div>
             <form onSubmit={handleSubmit} className='mb-3 '>
-                <input value={email} onChange={(e)=> setemail(e.target.value)} className='mb-4' type="text" placeholder='Enter Your email ID'/>
+                <input  value={email} onChange={(e)=> setemail(e.target.value)} className='mb-4' type="email" required placeholder='Enter Your email ID'/>
                 <p style={{color:'red',fontSize:'14px'}}>{mail}</p>
-                <input value={password} onChange={(e)=>setpassword(e.target.value)} className='mb-4' type="text" placeholder='Enter Your Password' />
+                <input value={password} onChange={(e)=>setpassword(e.target.value)} className='mb-4' type="password" required placeholder='Enter Your Password' />
                 
                 <p style={{color:'red',fontSize:'14px'}}>{pass}</p>
-                <Link to = '/forgot'  ><span style={{color:'green'}}>Forgot Password?</span></Link><br></br>
+                <Link to = '/forgot'  ><span >Forgot Password?</span></Link><br></br>
                 <button type='submit' className='btn btn-primary'>Login</button>
                
             </form>

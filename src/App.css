@@ -14,3 +14,84 @@ ul{
 a{
   text-decoration: none;
 }
+lg{
+  width: 80%;
+}
+.view{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.box{
+  border: 1px solid rgb(235, 150, 150);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 10px 10px 50px pink;
+  margin: 30px;
+}
+.clicks{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+  margin-top: 20px;
+}
+Link{
+  background-color: red;
+}
+.bn{
+  /* background-color: rgb(244, 99, 124); */
+  padding: 6px 8px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  text-decoration: underline;
+  >a{
+    color: rgb(35, 32, 32);
+    text-decoration: underline;
+  }
+}
+.bn:hover{
+  opacity: .8;
+   background-color: rgb(244, 99, 124);
+   color: white;
+}
+
+.bns{
+  background-color: rgb(246, 181, 192);
+  padding: 4px 8px;
+  color: black;
+}
+.bns:active{
+  border-radius: 8px;
+}
+a:hover{
+  opacity: .8;
+   /* background-color: rgb(244, 99, 124); */
+   color: white;
+}
+
+.sg{
+    height: 50px;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 2px solid pink;
+  position: sticky;
+  top: 0;
+  background:white;
+}
+span{
+
+  color: rgb(219, 158, 168);
+  text-decoration: underline;
+ 
+}
+.btn{
+  margin-top: 10px;
+}

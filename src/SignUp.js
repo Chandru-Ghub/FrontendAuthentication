@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios'
-
+import logo from './pngwing.com (1).png'
 const SignUp = () => {
 
     const[name,setname] = useState();
@@ -24,7 +24,10 @@ const SignUp = () => {
   return (
     <div className='d-flex bg-secondary justify-content-center align-items-center  vh-100'>
         <div className='card d-flex  bg-white p-5 rounded w-20'>
+        <div className='icon'>
+            <img className='cam' src={logo} alt="" />
         <h3>Register</h3>
+        </div>
             <form onSubmit={handleSubmit} className='mb-3 '>
                 <input value={name} onChange={(e)=> setname(e.target.value)} className='mb-4' type="text" placeholder='Enter Your Name'/><br></br>
                 <input value={email} onChange={(e)=> setemail(e.target.value)} className='mb-4' type="text" placeholder='Enter Your email ID'/><br></br>

@@ -3,16 +3,22 @@ import { Link } from 'react-router-dom'
 
 const view = () => {
   return (
-    <div>
-        <ul style={{backgroundColor:'pink',display:'flex',}}>
-            <li>Instagram</li>
-            <Link to='/signup'>
-                <li className='signin'>Sign in?</li>
-            </Link>
-            <Link to='/login'>
-                <li className='signin'>Login</li>
-            </Link>
-        </ul>
+    <div className='view'>
+        <div className='box'>
+              <img className='lg' src="https://www.shutterstock.com/image-vector/zdolbuniv-ukraine-march-29-2023-260nw-2281736183.jpg" alt="" />
+                      <div className='clicks'>
+                        <p className='bn'>
+                        <Link to='/signup'>
+                            SignupNew?
+                        </Link>
+                        </p>
+                        <p className='bn'>
+                        <Link to='/login'>
+                            Signin
+                        </Link>
+                        </p>
+                      </div>
+              </div>
     </div>
   )
 }
